@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+$color-primary : #1E656D ;
+$color-secondary :  #F62A00 ;
+body {
+    background:#011A27 ;
+}
+header {
+    background: rgba(14, 13, 13 , .9);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12%;
+    @media screen and (max-width: 1000px) {
+        padding: 10px 5%;
+    }
+    img {
+        height: 50px;
+        
+    }
+    .ul {
+        list-style-type: none;
+        margin-top: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 740px) {
+            display: none;
+        }
+        li {
+            margin: 0 5px;
+            font-size: 18px;
+            a {
+                border: 1px solid white;
+                font-family: 'Bahnschrift';
+                font-size: 18px;
+                padding: 5px 15px;
+                @media screen and (max-width: 859px) {
+                    font-size: 14px;
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: $color-primary;
+                    border: 1px solid $color-primary;
+                }
+            }
+            
+        }
+    }
+    .btn {
+        height: 45px;
+        width: 45px;
+        margin-top: 5px;
+        display: none;
+        font-size: 22px;
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        @media screen and (max-width: 740px) {
+            display: block;
+        }
+    }
+}
+.modal {
+    .modal-dialog {
+        .modal-content {
+            padding: 25px;
+            ul {
+                list-style-type: none;
+                li {
+                    a {
+                        font-family: 'Bahnschrift';
+                        &:hover {
+                            text-decoration: none;
+                            color: $color-primary;
+                            border: 1px solid $color-primary;
+                        }
+                    }
+                
+                }
+            }
+        }
+    }
+}
+.active {
+    color: $color-primary;
+    border: 1px solid $color-primary;
+}
+.header-text {
+    text-align: center;
+    .line {
+        height: 5px;
+        width: 100px;
+        margin: 25px auto;
+        background: $color-primary;
+    }
+}
+
+.about-content {
+    padding: 50px 12%;
+    color: white;
+    @media screen and (max-width: 1000px) {
+        padding: 10px 5%;
+    }
+    .about-list {
+        h4 {
+            text-align: right;
+        }
+    }
+}
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 600px) {
+        display: block;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    span {
+        width: 70%;
+        @media screen and (max-width: 800px) {
+            width: 60%;
+        }
+        h1 {
+            @media screen and (max-width: 350px) {
+                font-size: 20px;
+            }
+        }
+        .social {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 25px;
+            margin-top: 15px;
+            a {
+                border: 1px solid white;
+                padding: 3px 10px;
+                border-radius: 100%;
+                &:hover {
+                    border: 1px solid $color-primary;
+                    color: $color-primary;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+.education {
+    .education-item {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 600px) {
+            display: block;
+            background: $color-primary;
+            padding: 15px;
+            margin: 10px 0;
+        }
+    }
+}
+.skills {
+    .skills-item {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 440px) {
+            width: 100%;
+            
+        }
+        .item-grade{
+            .acquired{
+                color: #1E656D;
+            }
+        }
+    }
+}
+.experience {
+    .experience-list {
+        display: grid;
+        gap: 15px;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill , minmax(240px ,250px) );
+        .experience-item {
+            width: 250px;
+            background: black;
+            @media screen and (max-width: 350px) {
+                width: 180px;
+            }
+            img {
+                width: 250px;
+                height: 200px;
+                object-fit: cover;
+                @media screen and (max-width: 350px) {
+                    width: 180px;
+                }
+            }
+            h6 {
+                text-align: center;
+                padding: 5px 0;
+            }
+        }
+    }
+}
